@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -mindeptn 1 -type d | wc -1
