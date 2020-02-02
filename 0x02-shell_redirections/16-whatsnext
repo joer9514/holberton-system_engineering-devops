@@ -1,0 +1,2 @@
+#!/bin/bash
+gre -c /etc/passwd -e "root" |head -n 3
