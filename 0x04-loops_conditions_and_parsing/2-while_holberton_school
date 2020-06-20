@@ -2,7 +2,7 @@
 # print 10 with while setence
 
 count=1
-while [ $count -le 11 ]
+while [ $count -le 10 ]
 do
 	echo "Holberton School"
 	($count++)
