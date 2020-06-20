@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# print 10 with while setence
+
+count=1
+while [ $count -le 11 ]
+do
+	echo "Holberton School"
+	$count++
+done
