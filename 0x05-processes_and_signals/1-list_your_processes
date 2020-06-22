@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# List my process
+
+ps auxf
