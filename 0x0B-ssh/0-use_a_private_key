@@ -1,0 +1,5 @@
+
+#!/usr/bin/env bash
+# Scripting
+
+ssh -i ~/.ssh/holberton ubuntu@34.75.86.172
