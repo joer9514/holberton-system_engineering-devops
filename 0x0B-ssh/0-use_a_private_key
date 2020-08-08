@@ -1,5 +1,4 @@
-
 #!/usr/bin/env bash
-# Scripting
+#Scripting
 
-ssh -i ~/.ssh/holberton ubuntu@34.75.86.172
+ssh -i ~/.ssh/holberton ubuntu@35.196.139.2
