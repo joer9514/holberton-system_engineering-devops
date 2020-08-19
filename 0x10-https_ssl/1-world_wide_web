@@ -1,19 +1,17 @@
 #!/usr/bin/env bash
-# script
+# Bash script
 
-if [ "$#" == 2 ]
+domain_info(){
+    dig "$1.$2" | grep -A1 'ANSWER SECTION:' | tail -1 | sed "s/.$2./ /g" | awk '{print "The subdomain " $1 " is a " $4 " record and points to " $5}'
+}
+
+if [ "$#" -eq 2 ]
 then
-    arg=$2
-else
-    arg=("www"
-         "lb-01"
-         "web-01"
-         "web-02"
-         )
+    domain_info "$2" "$1"
+elif [ "$#" -eq 1 ]
+then
+    domain_info "www" "$1"
+    domain_info "lb-01" "$1"
+    domain_info "web-01" "$1"
+    domain_info "web-02" "$1"
 fi
-
-for arg in "${arg[@]}"
-do
-    echo -n "The subdomain $arg"
-    dig "$arg.$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print " is a " $4 " record and points to " $5}'
-done
