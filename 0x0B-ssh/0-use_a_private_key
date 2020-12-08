@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#Scripting
+#ssh connected server ubuntu
 
-ssh -i ~/.ssh/holberton ubuntu@35.196.139.2
+ssh -i ~/.ssh/holberton ubuntu@35.231.44.126
