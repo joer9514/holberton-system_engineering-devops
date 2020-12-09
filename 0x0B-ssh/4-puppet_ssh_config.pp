@@ -1,4 +1,4 @@
-# ssh key configuration with Puppet
+# ssh key configuration with Puppet.
 
 file_line { 'ssh identity':
 path => '/etc/ssh/ssh_config',
